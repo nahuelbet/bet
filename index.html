@@ -27,26 +27,11 @@ font-family:'Montserrat',sans-serif;
 color:#fff;
 text-align:center;
 overflow:hidden;
-background:#000;
-}
 
-/* VIDEO FONDO */
-#bg-video{
-position:fixed;
-inset:0;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:-2;
-}
-
-/* OVERLAY */
-body::before{
-content:'';
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.65);
-z-index:-1;
+/* IMAGEN DE FONDO */
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+url("gta.png") center/cover no-repeat fixed;
 }
 
 .container{
@@ -118,13 +103,11 @@ animation:shine 5s infinite;
 100%{left:120%;}
 }
 
-/* LOGO */
 .btn img{
 max-width:180px;
 height:auto;
 }
 
-/* FOOTER */
 .footer{
 margin-top:50px;
 font-size:.7rem;
@@ -135,11 +118,6 @@ opacity:.5;
 </head>
 
 <body>
-
-<!-- VIDEO -->
-<video autoplay muted loop playsinline id="bg-video">
-<source src="grok.mp4" type="video/mp4">
-</video>
 
 <div class="container">
 
@@ -156,9 +134,9 @@ Atención directa y rápida.
 <img src="logo.png">
 </a>
 
-<!-- BOTÓN WHATSAPP CON TEXTO -->
+<!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/5491164799806?text=Hola%20Nahuel,%20vengo%20de%20parte%20de%20Yamila%20☺️,%20mi%20nombre%20es%20:" class="btn">
-CONTACTO DIRECTO
+WHATSAPP
 </a>
 
 <div class="footer">
